@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LemonMaster.master.cs" Inherits="LemonMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 284px;
+        }
+        .auto-style3 {
+            height: 204px;
+        }
+        .auto-style4 {
+            height: 51px;
+        }
+        .auto-style5 {
+            height: 23px;
+        }
+        .auto-style6 {
+            height: 23px;
+            width: 5px;
+        }
+        .auto-style7 {
+            width: 295%;
+            margin-right: 3px;
+        }
+        .auto-style8 {
+            width: 182px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td colspan="2") class="auto-style3" style="background-image: url('/Lemon_Plantilla/Lemon_Plantilla/Imagenes/Wallpaper.jpg'); background-position: 200% 200px; background-repeat: repeat;vertical-align:middle; text-align:center">
+                    <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Imagenes/logo.png" PostBackUrl="~/Principal.aspx" Width="581px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style6" style="text-align: center; vertical-align: middle; clip: rect(auto, auto, auto, 50px);">
+                    <table class="auto-style7">
+                        <tr>
+                            <td class="auto-style8">&nbsp;</td>
+   &nbsp;</td>
+                            <td style="vertical-align: middle; text-align: center">
+                                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Imagenes/cerrar_sesion.png" OnClick="ImageButton1_Click"  Width="100px" />
+                                <br />
+                                <asp:Panel ID="Panel1" runat="server" Width="111px" Height="76px">
+                        <asp:Menu ID="Menu1" runat="server" Font-Bold="True" ForeColor="Black">
+                            <Items>
+                                <asp:MenuItem Text="Buscar Trabajo" Value="Buscar_Trabajo" NavigateUrl="~/view/Buscar_Trabajo.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Cliente" Value="Cliente">
+                                    <asp:MenuItem Text="Modificar" Value="Modificar_Cliente" NavigateUrl="~/view/Modificar_Cliente.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Agregar" Value="Agregar_Cliente" NavigateUrl="~/view/Agregar_Cliente.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Eliminar" Value="Eliminar_Cliente" NavigateUrl="~/view/Eliminar_Cliente.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Cotizar" Value="Cotizar" NavigateUrl="~/view/Cotizar.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Facturar" Value="Facturar" NavigateUrl="~/view/Facturar.aspx"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </asp:Panel>
+                                <br />
+                                <asp:Panel ID="Panel2" runat="server" Width="111px">
+                                    <asp:Menu ID="Menu2" runat="server" Font-Bold="True" ForeColor="Black" OnMenuItemClick="Menu2_MenuItemClick">
+                                        <Items>
+                                            <asp:MenuItem Text="Usuario" Value="Usuario">
+                                                <asp:MenuItem Text="Modificar" Value="Modificar_Usuario" NavigateUrl="~/view/Modificar_Usuario.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Agregar" Value="Agregar_Usuario" NavigateUrl="~/view/Agregar_Usuario.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Eliminar" Value="Eliminar_Usuario" NavigateUrl="~/view/Eliminar_Usuario.aspx"></asp:MenuItem>
+                                            </asp:MenuItem>
+                                            <asp:MenuItem Text="Articulos" Value="Articulos">
+                                                <asp:MenuItem Text="Modificar" Value="Modificar_Art" NavigateUrl="~/view/Modificar_Articulo.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Agregar" Value="Agregar_Art" NavigateUrl="~/view/Ingresar_Articulo.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Eliminar" Value="Eliminar_Art" NavigateUrl="~/view/Eliminar_Articulo.aspx"></asp:MenuItem>
+                                            </asp:MenuItem>
+                                            <asp:MenuItem Text="Anular Factura" Value="Anular_Factura" NavigateUrl="~/view/Anular_Factura.aspx"></asp:MenuItem>
+                                        </Items>
+                                    </asp:Menu>
+                    </asp:Panel>
+                    <br />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="auto-style5">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="auto-style4" style="text-align: center; vertical-align: middle; background-image: url('/Lemon_Plantilla/Lemon_Plantilla/Imagenes/Wallpaper.jpg'); background-position: 200% 100px; color: #FFFFFF; font-family: 'Britannic Bold';">
+                    www.lemondisenoypublicidad.com
+                      </table>
+    </form>
+</body>
+</html>

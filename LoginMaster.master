@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LoginMaster.master.cs" Inherits="LoginMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 204px;
+        }
+        .auto-style3 {
+            height: 51px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td colspan="2") class="auto-style2" style="background-image: url('/Imagenes/Wallpaper.jpg'); background-position: 200% 200px; background-repeat: repeat;vertical-align:middle; text-align:center">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Imagenes/logo.png" Width="581px"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="auto-style3" style="text-align: center; vertical-align: middle; background-image: url('/Imagenes/Wallpaper.jpg'); background-position: 200% 100px; color: #FFFFFF; font-family: 'Britannic Bold';">
+                    www.lemondisenoypublicidad.com
+                    </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
